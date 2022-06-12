@@ -61,6 +61,8 @@
         }
     }
     var nama = GetURLParameter('nama');
+    var spasi = new RegExp("\\+","g");
+    nama = nama.replace(spasi," ");
     document.getElementById("nama").innerHTML = nama;
     </script>
 </body>
