@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Tangerine:wght@400;700&display=swap');
+
+:root{
+    --background-white: #FAFAFC;
+    --background-primary: linear-gradient(269.36deg, #D4AF37 -99.04%, #FAD25A 115.12%);
+    --background-button: linear-gradient(270deg, #D4AF37 -112.5%, #FAD25A 100%);
+    --text-linear : linear-gradient(269.36deg, #D4AF37 -99.04%, #FAD25A 115.12%);
+    --text-primary : #AE8D0B;
+    --text-secondary : #FAD25A;
+    --text-third :#B39D69;
+
+    --open-sans :'Open Sans', sans-serif;
+    --oleo-script:'Oleo Script', cursive;
+    --tangarine:'Tangerine', cursive;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--background-white);
+}
+/* index.html */
+.content {
+    min-height: 100vh;
+    padding: 60px 0 80px 0;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-width: 768px;
+    margin: 0 auto;
+    border: 5px solid #AE8D0B;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+}
+.content_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.content_text_up h1{
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    background: linear-gradient(264.55deg, #D4AF37 -122.45%, #AE8D0B -122.42%, #FAD25A 114.92%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 36px;
+    width: 320px;
+}
+.content_img {
+    margin-bottom: 30px;
+}
+
+.content_text_midle{
+    margin-bottom: 20px;
+}
+
+.content_text_midle h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    text-align: center;
+    
+    background: linear-gradient(269.36deg, #D4AF37 -99.04%, #FAD25A 115.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.content_text_undangan p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #B39D69;
+    margin-bottom: 30px;
+}
+
+.content_text_undangan div{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    text-align: center;
+    
+    background: linear-gradient(267.96deg, #D4AF37 -107.83%, #FAD25A 111.24%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.content_text_undangan h3{
+    font-family: var(--tangarine);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #B39D69;
+    margin-bottom: 28px;
+}
+
+.content_text_undangan a{
+    font-family: 'Tangerine';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #F0F0F0;
+    background: linear-gradient(270deg, #D4AF37 -112.5%, #FAD25A 100%);
+    padding: 10px 44px;
+    border-radius: 10px;
+}
+
+.images-bg{
+    position: absolute;
+    top: -15%;
+    left: -14%;
+}
+
+.images-bg img{
+    width: 350px;
+    transform: rotate(106.91deg);
+    
+}
+
+.images-bg2{
+    position: absolute;
+    bottom: -10%;
+    right: -14%;
+}
+
+.images-bg2 img{
+    width: 366px;
+    height: 399px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media only screen and (max-width: 600px)  {
+    .images-bg{
+        left: -30%;
+    }
+
+    .images-bg2{
+        right: -25%;
+    }
+
+    .content{
+        border: none;
+    }
+    
+}
